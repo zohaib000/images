@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Facebok video Downloader</title>
+    <style>
+    #hd{
+      background-image: url("{% static 'h.png' %}");
+      background-size:     cover;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center; 
+      height: 300px;
+    }
+    #n{
+      color:red;
+    }
+    @media only screen and (min-width: 768px) {
+    label{
+      font-size:23px;
+    }
+    #had{
+      color:green;
+      font-size: 40px;
+    }
+}
+    </style>
+  </head>
+ <body>
+  <img src="{% static 'home/a.png' %}" alt="">
+  <div id="hd">
+    <img src="{% static  'home/b.png' %}" alt="">
+  </div>
+  <div>
+    <div class="mb-3" style="background-color:">
+        <center><h2 id="had">Facebook Video Downloader</h2></center><br>
+        <form action="{% url 'submit' %}" method="post">
+          {% csrf_token %}
+        <center><label for="exampleFormControlInput1" class="form-label">ENTER FACEBOOK VIDEO LINK:</label></center>
+        <input type="text" name="url" class="form-control" id="exampleFormControlInput1" placeholder="Enter Facebook video link">
+        <br><br><center><input type="submit" class="btn btn-primary" onclick="alert()" value="Download video"></center></form>
+      </div>
+    </div> <br>
+    <center><h3 id="n"></h3></center>
+    <div class="alert alert-success" role="alert">
+      <p id="txt" >{{a}}</p>
+    </div>
+    <div style="background-color:"><br>
+      <h2>How to use this tool?</h2>
+      <ul>
+        <li>Copy the link of <b>facebook video</b>.</li>
+        <li>Paste the link in box.</li>
+        <li>Click on <b>Download video</b> Button.And choose the Path where you want to download the video.</li>
+        <li>Now , your <b>facebook video  </b>will be Downloaded successfully.</li>
+        <li>Your video will be saved in <b>selected path</b>.</li>
+      </ul><br><br>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+   <script>
+ 
+    function alert(){
+     document.getElementById("txt").innerText="";
+     document.getElementById("n").innerText="Video is Downloading.......";
+    }
+    
+   </script>
+  </body>
+</html>

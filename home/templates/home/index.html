@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Perfect</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap"/>
+    </noscript>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <style>
+      img{
+        height: 500px;
+        width: 500px;
+      }
+      figcaption{
+        visibility: hidden;
+      }
+      header{
+        background-image: url("{% static 'images/a.png' %}");
+      }
+    </style>
+  </head>
+  <body id="top">
+   
+    <div class="page">
+      <header>
+        <div class="pp-header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a><img src="{% static 'images/favicon.png' %}" alt="Logo"></a><form action="/search2" method="post">
+              {% csrf_token %}
+              <input type="search" name="search" placeholder="search Gifs.......">
+              <input type="submit">
+
+  
+            </form><a class="navbar-brand" href="/">Photo Perfect</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="page-content">
+        <div class="container">
+<div class="container pp-section">
+  <div class="row">
+    <div class="col-md-9 col-sm-12 px-0">
+      <h1 class="h3"> We are Photo Perfect, A Digital Photography Studio.</h1>
+      <center><h3 style="color:rgb(22, 146, 37);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Use these gifs in your websites,youtube and any other blogging site with <b>no copyright strike.</b> </h3></center> 
+    </div>
+  </div>
+</div>
+<div class="container px-0 py-4">
+  <div class="pp-category-filter">
+  </div>
+</div>
+<div class="container px-0">
+  <div class="pp-gallery">
+    <div class="card-columns">
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/1-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/1-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Forest</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/2-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/2-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Bird</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/4-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"  src="{% static 'images/4-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Sunrise</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/5-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"  src="{% static 'images/5-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Greenery</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/8-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/8-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Bird</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;nature&quot;]"><a href="{% static 'images/9-nature.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/9-nature.jpg' %}" alt="Nature"/>
+            <figcaption>
+              <div class="h4">Flower</div>
+              <p>Nature</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot; , &quot;nature&quot;]"><a href="{% static 'images/10-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"  src="{% static 'images/10-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">fd</div>
+              <p>  </p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot;]"><a href="{% static 'images/11-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"  src="{% static 'images/11-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">Cute</div>
+              <p>People</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot;]"><a href="{% static 'images/13-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"  src="{% static 'images/13-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">Model</div>
+              <p>People</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot;]"><a href="{% static 'images/14-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"src="{% static 'images/14-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">Model</div>
+              <p>People</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot;]"><a href="{% static 'images/16-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/16-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">Model</div>
+              <p>People</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;people&quot; , &quot;nature&quot;]"><a href="{% static 'images/17-people.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/17-people.jpg' %}" alt="People"/>
+            <figcaption>
+              <div class="h4">Model</div>
+              <p>People</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="{% static 'images/18-computer.jpg' %}" >
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/18-computer.jpg' %}" alt="Computer"/>
+            <figcaption>
+              <div class="h4">Laptop</div>
+              <p>Computer</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="{% static 'images/m.gif' %}">
+          <figure class="pp-effect"><img class="img-fluid"src="{% static 'images/19-computer.jpg' %}" alt="Computer"/>
+            <figcaption>
+              <div class="h4">Laptop</div>
+              <p>Computer</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="{% static 'images/20-computer.jpg' %}" >
+          <figure class="pp-effect"><img class="img-fluid"src="{% static 'images/20-computer.jpg' %}" alt="Computer"/>
+            <figcaption>
+              <div class="h4">Laptop</div>
+              <p>Computer</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="{% static 'images/23-computer.jpg' %}" >
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/23-computer.jpg' %}" alt="Computer"/>
+            <figcaption>
+              <div class="h4">Laptop</div>
+              <p>Computer</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="{% static 'images/24-computer.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/24-computer.jpg' %}" alt="Computer"/>
+            <figcaption>
+              <div class="h4">Laptop</div>
+              <p>Computer</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/26-food.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/26-food.jpg' %}" alt="Food"/>
+            <figcaption>
+              <div class="h4">Fruit Salad</div>
+              <p>Food</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/27-food.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/27-food.jpg' %}" alt="Food"/>
+            <figcaption>
+              <div class="h4">Oranges</div>
+              <p>Food</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/28-food.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"src="{% static 'images/28-food.jpg' %}" alt="Food"/>
+            <figcaption>
+              <div class="h4">Lemon Tea</div>
+              <p>Food</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/29-food.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid"src="{% static 'images/29-food.jpg' %}" alt="Food"/>
+            <figcaption>
+              <div class="h4">Pasta</div>
+              <p>Food</p>
+            </figcaption>
+          </figure></a></div>
+      <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/30-food.jpg' %}">
+          <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/30-food.jpg' %}" alt="Food"/>
+            <figcaption>
+              <div class="h4">Burger</div>
+              <p>Food</p>
+            </figcaption>
+          </figure></a></div>
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/o.gif' %}">
+            <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/o.gif' %}" alt="Food"/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+            <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/q.gif' %}">
+              <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/q.gif' %}" alt="Food"/>
+                <figcaption>
+                  <div class="h4">Burger</div>
+                  <p>Food</p>
+                </figcaption>
+              </figure></a></div>
+              <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/n.gif' %}">
+                <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/n.gif' %}" alt="Food"/>
+                  <figcaption>
+                    <div class="h4">Burger</div>
+                    <p>Food</p>
+                  </figcaption>
+                </figure></a></div>
+                <div class="card" data-groups="[&quot;food&quot;]"><a href="{% static 'images/g.gif' %}">
+                  <figure class="pp-effect"><img class="img-fluid" src="{% static 'images/g.gif' %}" alt="Food"/>
+                    <figcaption>
+                      <div class="h4">Burger</div>
+                      <p>Food</p>
+                    </figcaption>
+                  </figure></a></div>          {% for i in list1 %}
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{{i}}">
+            <figure class="pp-effect"><img class="img-fluid" src="{{i}}" alt=""/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+          {% endfor %}     
+          {% for i in list2 %}
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{{i}}">
+            <figure class="pp-effect"><img class="img-fluid" src="{{i}}" alt="food"/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+          {% endfor %}  
+          {% for i in list3 %}
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{{i}}">
+            <figure class="pp-effect"><img class="img-fluid" src="{{i}}" alt="Food"/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+          {% endfor %}  
+          {% for i in list4 %}
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{{i}}">
+            <figure class="pp-effect"><img class="img-fluid" src="{{i}}" alt="Food"/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+          {% endfor %}  
+          
+          {% for i in list5 %}
+          <div class="card" data-groups="[&quot;food&quot;]"><a href="{{i}}">
+            <figure class="pp-effect"><img class="img-fluid" src="{{i}}" alt="Food"/>
+              <figcaption>
+                <div class="h4">Burger</div>
+                <p>Food</p>
+              </figcaption>
+            </figure></a></div>
+          {% endfor %}  
+  </div>
+</div>
+<div class="pp-section"></div></div>
+      </div>
+    </div>
+    <footer class="pp-footer">
+      <div class="container py-5">
+        <div class="row text-center">
+    
+          <div class="col-md-12">
+            <p class="mt-3"> All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'scripts/jquery.min.js?ver=1.2.0' %}"></script>
+    <script src="{% static 'scripts/bootstrap.bundle.min.js?ver=1.2.0' %}"></script>
+    <script src="{% static 'scripts/main.js?ver=1.2.0' %}"></script>
+  </body>
+</html>
