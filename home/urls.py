@@ -4,5 +4,6 @@ from home import views
 
 urlpatterns = [
     path('', views.image,name="image"),
-    path("searching",views.searching,name="searching")
+    path("searching",views.searching,name="searching"),
+    path("joker",views.joker,name="joker")
 ]
