@@ -6,5 +6,5 @@ def image(request):
     return render(request,"home/search.html")
 
 def searching(request):
-    n=range(0,91)
+    n=range(0,875)
     return render(request,"home/searching.html",{"n":n})
