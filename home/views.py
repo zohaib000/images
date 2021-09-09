@@ -10,5 +10,5 @@ def searching(request):
     return render(request,"home/searching.html",{"n":n})
 
 def joker(request):
-    n=range(0,875)
+    n=range(0,492)
     return render(request,"home/joker.html",{"n":n})
