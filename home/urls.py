@@ -4,5 +4,5 @@ from home import views
 
 urlpatterns = [
     path('', views.image,name="image"),
-
+    path("searching",views.searching,name="searching")
 ]
