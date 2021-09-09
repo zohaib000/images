@@ -8,3 +8,7 @@ def image(request):
 def searching(request):
     n=range(0,875)
     return render(request,"home/searching.html",{"n":n})
+
+def joker(request):
+    n=range(0,875)
+    return render(request,"home/joker.html",{"n":n})
