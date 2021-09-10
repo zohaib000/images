@@ -36,3 +36,8 @@ def poetry(request):
 def animals(request):
     n=range(0,492)
     return render(request,"home/animals.html",{"n":n})
+
+def parrot(request):
+    n=range(0,492)
+    return render(request,"home/parrot.html",{"n":n})
+
