@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from home.models import img
 # Create your views here.
 def image(request):
     n=range(0,91)
-    return render(request,"home/search.html")
+    return HttpResponse("aye haye")
 
 def searching(request):
     n=range(0,875)
