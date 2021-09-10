@@ -12,3 +12,27 @@ def searching(request):
 def joker(request):
     n=range(0,492)
     return render(request,"home/joker.html",{"n":n})
+
+def pig(request):
+    n=range(0,492)
+    return render(request,"home/pig.html",{"n":n})
+
+def birds(request):    
+    n=range(0,492)
+    return render(request,"home/birds.html",{"n":n})
+
+def lion(request):
+    n=range(0,492)
+    return render(request,"home/lion.html",{"n":n})
+def tiger(request):
+    n=range(0,492)
+    return render(request,"home/tiger.html",{"n":n})
+def fifa(request):
+    n=range(0,492)
+    return render(request,"home/fifa.html",{"n":n})
+def poetry(request):
+    n=range(0,492)
+    return render(request,"home/poetry.html",{"n":n})
+def animals(request):
+    n=range(0,492)
+    return render(request,"home/animals.html",{"n":n})
