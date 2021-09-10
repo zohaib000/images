@@ -41,3 +41,10 @@ def parrot(request):
     n=range(0,492)
     return render(request,"home/parrot.html",{"n":n})
 
+def cats(request):
+    n=range(0,492)
+    return render(request,"home/cats.html",{"n":n})
+
+def dogs(request):
+    n=range(0,492)
+    return render(request,"home/dogs.html",{"n":n})
