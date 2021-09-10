@@ -14,4 +14,6 @@ urlpatterns = [
      path("poetry",views.poetry,name="poetry"),
      path("animals",views.animals,name="animals"),
      path("parrot",views.parrot,name="parrot"),
+     path("dogs",views.dogs,name="dogs"),
+     path("cats",views.cats,name="cats"),
 ]
