@@ -63,7 +63,23 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'joker' %}">Jokers</a>
         </li>
-      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#list" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More items
+          </a>
+          <ul id="list" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'pig' %}">pigeons</a></li>
+            <li><a class="dropdown-item" href="{% url 'birds' %}">Birds</a></li>
+            <li><a class="dropdown-item" href="{% url 'lion' %}">Lions</a></li>
+            <li><a class="dropdown-item" href="{% url 'fifa' %}">Fifa world cup</a></li>
+            <li><a class="dropdown-item" href="{% url 'poetry' %}">Poetry Lines</a></li>
+            <li><a class="dropdown-item" href="{% url 'animals' %}">Dangerous animals</a></li>
+            <li><a class="dropdown-item" href="{% url 'parror' %}">Parrots</a></li>
+            <li><a class="dropdown-item" href="{% url 'cats' %}">Big Cats</a></li>
+            <li><a class="dropdown-item" href="{% url 'dog' %}">prretty Dogs</a></li>
+            <li><a class="dropdown-item" href="{% url 'tiger' %}">Tigers community</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
